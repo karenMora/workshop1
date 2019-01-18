@@ -12,7 +12,7 @@
 
 ![](test2.png)
 
-![](4pass.png)
+![](4 pass.png)
 
 What is the purpose of this command?
 - git add .
@@ -27,6 +27,8 @@ Why we used it?
 - git clone <repository>
 
 # End Of File
+
+![](2.1 Test.png)
 
 What that command does?
 - git pull origin master
