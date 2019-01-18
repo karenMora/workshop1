@@ -1,46 +1,30 @@
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 public class Solution {
 
     static boolean isAnagram(String a, String b) {
         boolean sol=false;
-        //boolean igual=false;
+        String x=a.toLowerCase();
+        String y=b.toLowerCase();
+        StringBuilder z = new StringBuilder(b);
         
-        //System.out.println("String--->"+a);
-        //System.out.println("String--->"+b);
-        
-        char arrA[] = a.toCharArray();
-        ArrayList<Character> arrB=new ArrayList<Character>();//array de caracteres
-        
-        for(int p=0;p<b.length();p++){
-            arrB.add(b.charAt(p));
-            
-        }
-        System.out.print(""+arrB);
-        
-        if(a.length() != b.length()) {
-            sol=false;
-        }
-        else {
-            for (int i = 0; i < a.length(); i++) {
-                String x = Character.toString(arrA[i]);
-                for (int j = 0; j < b.length(); j++) {
-                    String y = Character.toString(arrB.get(j));
-                    if (arrA[i]==arrB.get(j)) {
-                        System.out.print("---"+arrA[i]+"-----"+arrB.get(i));
-                    //if (x.equalsIgnoreCase(y)) {
-                        sol = true;
-                        arrB.remove(j);
+        if(x.length()== y.length()){
+            for (int i = 0; i < x.length(); i++) {
+                for (int j = 0; j < z.length(); j++) {
+                    if (x.charAt(i) == z.charAt(j)) {
+                        z.deleteCharAt(j);
+                        if(i == x.length() - 1 && z.length() == 0){
+                            sol=true;
+                            break;
+                        }
+                        break;
                     }
                 }
             }
-            
         }
         return sol;
     }
-          
-    
     
     public static void main(String[] args) {
     
