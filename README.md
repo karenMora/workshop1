@@ -7,9 +7,12 @@
 
 # Anagrams
 ![](3. gitAdd.png)
+
 ![](test1.png)
+
 ![](test2.png)
-![](4 pass.png)
+
+![](4pass.png)
 
 What is the purpose of this command?
 - git add .
