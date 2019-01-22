@@ -47,7 +47,7 @@ What that command does?
 
 
 # POM file
-- What do means the word SNAPSHOT in the version value?, Se refiere a una versión del proyecto que está en tiempo de desarrollo como un WORK-IN-PROGRESS.
+- What do means the word SNAPSHOT in the version value?, It refers to a version of the project that is in the development time as a WORK IN PROGRESS.
 
 - What is the purpose of the packing tag into the POM file?
 
